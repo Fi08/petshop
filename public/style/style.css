@@ -1,13 +1,13 @@
 :root {
-    --primary: #e61553;
+    --primary: #79ca61ff;
     --second: #e95399;
     --test: rgb(231, 34, 93);
-    --three: #eeaf88;
+    --three: #fffcf5;
     --bg: #fffcf5;
     --text:#272727;
     --bgsection: #fffcfc;
-    --gradien: 230,21,83;
-    --gradien2: 226,56,107;
+    --gradien: 121, 202, 97;
+    --gradien2: 143, 230, 117;
   }
 
   * {
@@ -69,7 +69,7 @@
   }
 
   .bt-banner{
-    background-color: #e9396d;
+    background-color: #79ca61ff;
     border-radius: 25px;
     height: 70px;
   }
