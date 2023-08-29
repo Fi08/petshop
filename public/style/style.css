@@ -1,0 +1,189 @@
+:root {
+    --primary: #e61553;
+    --second: #e95399;
+    --test: rgb(231, 34, 93);
+    --three: #eeaf88;
+    --bg: #fffcf5;
+    --text:#272727;
+    --bgsection: #fffcfc;
+    --gradien: 230,21,83;
+    --gradien2: 226,56,107;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+  }
+
+  .mynav{
+    /* background: linear-gradient(115deg, rgba(var(--gradien) 100%, rgba(var(--gradien2) 100%))); */
+    background: linear-gradient(-180deg, rgba(var(--gradien)),rgba(var(--gradien)),rgba(var(--gradien)), rgba(var(--gradien2), 1));
+    
+    padding: 1.1rem 7%;
+  }
+
+  nav .navbar-brand{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    color:var(--bg);
+  }
+  nav .navbar-brand span{
+   color: var(--three);
+  }
+
+  nav .navbar-collapse .navbar-nav .nav-item a{
+    margin: 0 0rem;
+  }
+
+  .nav-item a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid var(--bg);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  .nav-item a:hover::after {
+    transform: scaleX(0.9);
+    
+  }
+
+  .infografis{
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 153px;
+    cursor: pointer;
+  }
+
+  .bt-banner{
+    background-color: #e9396d;
+    border-radius: 25px;
+    height: 70px;
+  }
+
+  /* .produk-img{
+    height: 240px;
+  } */
+
+  .bjp-rekomen{
+    background-color: var(--bgsection);
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .myfont{
+    font-family: "halant", sans-serif;
+  }
+
+  .myfontnameproduk{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .myfontabout{
+    font-size: 13px;
+  }
+
+  .myfontbeforediskon{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .harga{
+    margin-bottom: 2px;
+  }
+
+  .mybutton{
+    border: none;
+    height: 30px;
+    padding-top:7px;
+  }
+
+  .myfontcolor{
+    color: var(--primary);
+  }
+
+  .mycard-body{
+    height: 123px;
+  }
+
+  .about{
+    background-color:#ffffff
+   
+  }
+
+  .fontdark{
+    color:var(--text);
+  }
+
+  .gambarkami{
+    height: 400px;
+  }
+
+  footer{
+    text-align: center;
+    padding-top: 5px;
+    height: 35px;
+    background-color: var(--primary);
+  }
+  /* .abouthome {
+    background-color: #f6f9ff;
+    background-image: url('../img/paralax.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 250px;
+  } */
+
+  .abouttext{
+    position: absolute;
+    top: 40%;
+    margin-left: 10%;
+  }
+  .textabout{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .textabout2{
+    margin-top: -17px;
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+  }
+
+
+
+  /* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .jumbo {
+    height: 400px;
+  }
+  
+}
