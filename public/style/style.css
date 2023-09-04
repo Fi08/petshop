@@ -1,0 +1,274 @@
+:root {
+    --primary: #79ca61ff;
+    --second: #e95399;
+    --test: rgb(231, 34, 93);
+    --three: #fffcf5;
+    --bg: #fffcf5;
+    --text:#272727;
+    --bgsection: #fffcfc;
+    --gradien: 121, 202, 97;
+    --gradien2: 143, 230, 117;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+  }
+
+  .mynav{
+    /* background: linear-gradient(115deg, rgba(var(--gradien) 100%, rgba(var(--gradien2) 100%))); */
+    background: linear-gradient(-180deg, rgba(var(--gradien)),rgba(var(--gradien)),rgba(var(--gradien)), rgba(var(--gradien2), 1));
+    
+    padding: 1.1rem 7%;
+  }
+
+  nav .navbar-brand{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    color:var(--bg);
+  }
+  nav .navbar-brand span{
+   color: var(--three);
+  }
+
+  nav .navbar-collapse .navbar-nav .nav-item a{
+    margin: 0 0rem;
+  }
+
+  .nav-item a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid var(--bg);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  .nav-item a:hover::after {
+    transform: scaleX(0.9);
+    
+  }
+
+  .infografis{
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 115px;
+    cursor: pointer;
+  }
+
+  .bt-banner{
+    background-color: #79ca61ff;
+    border-radius: 25px;
+    height: 70px;
+  }
+
+  .produk-img{
+    width: 100%;
+  }
+
+  .bjp-rekomen3{
+    background-image: url('../img/backgroundtreatment.jpg'); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .bjp-rekomen2{
+    background-image: url('../img/backgrondhotel.jpg'); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .bjp-rekomen{
+    background-color: var(--bgsection);
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .myfont{
+    font-family: "halant", sans-serif;
+  }
+
+  .myfontnameproduk{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .myfontabout{
+    font-size: 13px;
+  }
+
+  .myfontbeforediskon{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .harga{
+    margin-bottom: 2px;
+  }
+
+  .mybutton{
+    border: none;
+    height: 30px;
+    padding-top:7px;
+  }
+
+  .myfontcolor{
+    color: var(--primary);
+  }
+
+  .mycard-body{
+    height: 120px;
+  }
+
+  .mycard-body2{
+    height: 60px;
+  }
+
+  .about{
+    background-color:#ffffff
+   
+  }
+
+  .fontdark{
+    color:var(--text);
+  }
+
+  .gambarkami{
+    height: 400px;
+  }
+
+  .cardgalery{
+    box-shadow: 2px 2px 4px rgb(121, 202, 97);
+  }
+  footer{
+    text-align: center;
+    padding-top: 5px;
+    height: 35px;
+    background-color: var(--primary);
+  }
+  /* .abouthome {
+    background-color: #f6f9ff;
+    background-image: url('../img/paralax.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 250px;
+  } */
+
+  .abouttext{
+    position: absolute;
+    top: 40%;
+    margin-left: 10%;
+  }
+  .textabout{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .textabout2{
+    margin-top: -17px;
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+  }
+
+  .listpow{
+    list-style: none;
+  }
+
+  .listpow::before{
+    content: url(../img/paw-solid.svg);
+    z-index: 99;
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .listcek{
+    list-style: none;
+    margin-left: 15px;
+  }
+
+  .listcek::before{
+    content: url(../img/square-check-solid.svg);
+    z-index: 99;
+    position: absolute;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/treatment.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  .hero{
+    min-height:100vh;
+    position: relative;
+  }
+
+  .pltreatment{
+    background-color: rgba(255, 255, 255, 0.2); 
+    -webkit-backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
+  }
+
+
+
+
+  /* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .jumbo {
+    height: 400px;
+  }
+
+  .produk-img{
+    width: 75%;
+  }
+
+
+  
+  
+}
